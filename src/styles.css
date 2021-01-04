@@ -6,4 +6,8 @@
     #navbar-toggle:checked + #navbar {
         display:block;
     }
+
+    .navbar-link {
+        @apply flex lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:bg-indigo-400;
+    }
 }

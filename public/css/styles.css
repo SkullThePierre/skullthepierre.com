@@ -550,6 +550,28 @@ video {
   display:block;
 }
 
+.navbar-link:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(129, 140, 248, var(--tw-bg-opacity));
+}
+
+.navbar-link {
+  border-color: transparent;
+  border-bottom-width: 2px;
+  display: block;
+  display: flex;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+@media (min-width: 1024px) {
+  .navbar-link {
+    padding: 1rem;
+  }
+}
+
 .container {
   width: 100%;
 }
