@@ -5,7 +5,11 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
         'pierre-tall': "url('/img/background.jpg')",
-      })
+      }),
+
+      screens: {
+        'lg': '1080px', // re-define screen-lg to 1080px.
+      },
     },
   },
   variants: {
