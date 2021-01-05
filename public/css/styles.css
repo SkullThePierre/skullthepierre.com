@@ -560,13 +560,16 @@ video {
   border-bottom-width: 2px;
   display: block;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 640px) {
   .navbar-link {
     padding: 1rem;
   }
