@@ -1,7 +1,10 @@
 $(function () {
     const includes = $('[data-include]');
     $.each(includes, function () {
-        let file = 'common/' + $(this).data('include') + '.html';
-        $(this).load(file)
+        let file = $(this).data('include');
+        let obj = $(this)
+        $.get( file, function (page){
+            obj.append(page);
+        })
     })
 })
