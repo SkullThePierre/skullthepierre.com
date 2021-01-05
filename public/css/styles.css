@@ -546,7 +546,7 @@ video {
   height: auto;
 }
 
-#navbar-toggle:checked + #navbar {
+#navbar-toggle:checked + #navbar-container {
   display:block;
 }
 
