@@ -546,6 +546,10 @@ video {
   height: auto;
 }
 
+.navbar-container {
+  height: 60px;
+}
+
 #navbar-toggle:checked + #navbar-container {
   display:block;
 }
@@ -573,6 +577,14 @@ video {
   .navbar-link {
     padding: 1rem;
   }
+}
+
+.main-body {
+  height: 1560px;
+}
+
+.footer-container {
+  height: 180px;
 }
 
 .container {
