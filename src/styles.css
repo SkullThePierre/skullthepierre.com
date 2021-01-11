@@ -22,4 +22,12 @@
     .footer-container {
         height: 180px;
     }
+
+    .sm-link {
+        filter: brightness(0.75);
+        @apply w-6 grid items-center
+    }
+    .sm-link:hover {
+        filter: brightness(1.00);
+    }
 }
