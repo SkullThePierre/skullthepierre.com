@@ -20,3 +20,9 @@ $(window).scroll(function () {
         }, 250);
     }
 });
+
+// Replace the logo.
+function replaceLogo(){
+    $(window).off('scroll'); // turn-off detection.
+    skpLogo.addClass('transition duration-500 ease-out opacity-0 transform scale-150'); //fade it out.
+}
