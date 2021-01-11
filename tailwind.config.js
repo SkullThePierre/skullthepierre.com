@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'pierre-tall': "url('/img/background.jpg')",
+        'pierre-tall': "url('/img/background.png')",
       }),
 
       screens: {

@@ -4277,7 +4277,7 @@ video {
 }
 
 .bg-pierre-tall {
-  background-image: url('/img/background.jpg');
+  background-image: url('/img/background.png');
 }
 
 .from-transparent {
@@ -34903,7 +34903,7 @@ video {
   }
 
   .sm\:bg-pierre-tall {
-    background-image: url('/img/background.jpg');
+    background-image: url('/img/background.png');
   }
 
   .sm\:from-transparent {
@@ -65451,7 +65451,7 @@ video {
   }
 
   .md\:bg-pierre-tall {
-    background-image: url('/img/background.jpg');
+    background-image: url('/img/background.png');
   }
 
   .md\:from-transparent {
@@ -95999,7 +95999,7 @@ video {
   }
 
   .lg\:bg-pierre-tall {
-    background-image: url('/img/background.jpg');
+    background-image: url('/img/background.png');
   }
 
   .lg\:from-transparent {
@@ -126547,7 +126547,7 @@ video {
   }
 
   .xl\:bg-pierre-tall {
-    background-image: url('/img/background.jpg');
+    background-image: url('/img/background.png');
   }
 
   .xl\:from-transparent {
@@ -157095,7 +157095,7 @@ video {
   }
 
   .\32xl\:bg-pierre-tall {
-    background-image: url('/img/background.jpg');
+    background-image: url('/img/background.png');
   }
 
   .\32xl\:from-transparent {
