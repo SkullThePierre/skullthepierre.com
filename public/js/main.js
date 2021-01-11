@@ -22,7 +22,11 @@ $(window).scroll(function () {
 });
 
 // Replace the logo.
-function replaceLogo(){
+function replaceLogo() {
     $(window).off('scroll'); // turn-off detection.
-    skpLogo.addClass('transition duration-500 ease-out opacity-0 transform scale-150'); //fade it out.
+    skpLogo.addClass('transition duration-500 ease-out opacity-0 transform scale-150')
+        .delay(500).queue(function (next) {
+        $(this).addClass('hidden');
+        next();
+    }); //fade it out.
 }
