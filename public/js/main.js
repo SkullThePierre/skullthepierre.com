@@ -7,7 +7,6 @@ $(document).ready(function () {
 //Detect when skp-centre-logo is in the middle of the screen.
 let skpLogo = $('#skp-logo');
 let timeout = null;
-
 $(window).scroll(function () {
     if (!timeout) {
         timeout = setTimeout(function () {
@@ -30,4 +29,9 @@ function replaceLogo() {
         $('.video-container-outer').removeClass('hidden');
         next();
     }); //fade it out.
+
+    //Fade video in.
+    $('#main-video').delay(510).queue(function (next){
+        $(this).addClass('transition duration-1000 ease-in opacity-100')
+    });
 }
