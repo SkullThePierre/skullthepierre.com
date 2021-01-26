@@ -27,6 +27,7 @@ function replaceLogo() {
     skpLogo.addClass('transition duration-500 ease-out opacity-0 transform scale-150')
         .delay(500).queue(function (next) {
         $(this).addClass('hidden');
+        $('.video-container-outer').removeClass('hidden');
         next();
     }); //fade it out.
 }

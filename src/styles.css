@@ -30,4 +30,17 @@
     .sm-link:hover {
         filter: brightness(1.00);
     }
+
+    .video-container-outer {
+        margin: 650px 1%;
+    }
+
+    .video-container {
+        padding-bottom: 56.25%;
+        @apply relative grid
+    }
+
+    .embedded-video {
+        @apply absolute justify-self-center w-full h-full mx-0 my-auto
+    }
 }

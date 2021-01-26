@@ -598,6 +598,27 @@ video {
   filter: brightness(1.00);
 }
 
+.video-container-outer {
+  margin: 650px 1%;
+}
+
+.video-container {
+  padding-bottom: 56.25%;
+  display: grid;
+  position: relative
+}
+
+.embedded-video {
+  justify-self: center;
+  height: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: absolute;
+  width: 100%
+}
+
 .container {
   width: 100%;
 }
