@@ -31,7 +31,7 @@ function replaceLogo() {
     }); //fade it out.
 
     //Fade video in.
-    $('#main-video').delay(510).queue(function (next){
+    $('#main-video').delay(600).queue(function (next){
         $(this).addClass('transition duration-1000 ease-in opacity-100')
     });
 }
