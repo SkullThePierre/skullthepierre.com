@@ -4298,7 +4298,11 @@ video {
 }
 
 .bg-pierre-tall {
-  background-image: url('/img/background.png');
+  background-image: url('/img/bgs/background.png');
+}
+
+.bg-contact-page {
+  background-image: url('/img/bgs/bg-contact.png');
 }
 
 .from-transparent {
@@ -34924,7 +34928,11 @@ video {
   }
 
   .sm\:bg-pierre-tall {
-    background-image: url('/img/background.png');
+    background-image: url('/img/bgs/background.png');
+  }
+
+  .sm\:bg-contact-page {
+    background-image: url('/img/bgs/bg-contact.png');
   }
 
   .sm\:from-transparent {
@@ -65472,7 +65480,11 @@ video {
   }
 
   .md\:bg-pierre-tall {
-    background-image: url('/img/background.png');
+    background-image: url('/img/bgs/background.png');
+  }
+
+  .md\:bg-contact-page {
+    background-image: url('/img/bgs/bg-contact.png');
   }
 
   .md\:from-transparent {
@@ -96020,7 +96032,11 @@ video {
   }
 
   .lg\:bg-pierre-tall {
-    background-image: url('/img/background.png');
+    background-image: url('/img/bgs/background.png');
+  }
+
+  .lg\:bg-contact-page {
+    background-image: url('/img/bgs/bg-contact.png');
   }
 
   .lg\:from-transparent {
@@ -126568,7 +126584,11 @@ video {
   }
 
   .xl\:bg-pierre-tall {
-    background-image: url('/img/background.png');
+    background-image: url('/img/bgs/background.png');
+  }
+
+  .xl\:bg-contact-page {
+    background-image: url('/img/bgs/bg-contact.png');
   }
 
   .xl\:from-transparent {
@@ -157116,7 +157136,11 @@ video {
   }
 
   .\32xl\:bg-pierre-tall {
-    background-image: url('/img/background.png');
+    background-image: url('/img/bgs/background.png');
+  }
+
+  .\32xl\:bg-contact-page {
+    background-image: url('/img/bgs/bg-contact.png');
   }
 
   .\32xl\:from-transparent {
