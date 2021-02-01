@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
         'pierre-tall': "url('/img/bgs/background.png')",
-        'contact-page': "url('/img/bgs/bg-contact.png')"
+        'contact-page-wide': "url('/img/bgs/bg-contact-wide.png')",
+        'contact-page-tall': "url('/img/bgs/bg-contact-tall.png')",
       }),
 
       screens: {
