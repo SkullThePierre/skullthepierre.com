@@ -5,13 +5,24 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
             integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
             crossorigin="anonymous"></script>
+    <style>
+        .music-videos > * {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+    </style>
 </head>
 <body class="antialiased bg-black">
 <div class="flex justify-center min-h-screen">
     <div class="container flex-grow max-w-screen-lg text-white">
         <div data-include="/common/navbar.html" class="navbar-container"></div>
         <div class="grid grid-cols-2 gap-4 p-4 text-center">
-            <div class="bg-green-900 col-span-2 h-96">Marquee Videos here</div>
+            <div class="grid music-videos bg-green-900 col-span-2">
+                <svg class="hidden md:block" viewBox="0 0 16 4.5" />
+                <svg class="md:hidden" viewBox="0 0 16 9" />
+                <div id="content">
+                    Music videos here.
+                </div>
+            </div>
             <div class="bg-green-900 h-64">Live videos here</div>
             <div class="bg-green-900 h-64">Beats videos here.</div>
             <div class="bg-green-900 h-64">Beats making videos here.</div>
