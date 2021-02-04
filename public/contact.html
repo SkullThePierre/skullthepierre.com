@@ -10,6 +10,48 @@
 <div class="flex justify-center min-h-screen">
     <div class="container bg-contact-page-tall md:bg-contact-page-wide bg-top bg-no-repeat bg-cover flex-grow max-w-screen-lg">
         <div data-include="/common/navbar.html" class="navbar-container"></div>
+        <div data-include="/common/navbar.html" class="navbar-container"></div>
+        <div class="container-inner flex justify-center min-h-screen md:justify-end">
+            <div>
+                <div class="flex flex-col p-4">
+                    <div class="bg-contact-card">
+                        <div class="flex flex-col text-center p-4">
+                            <span>Contact</span>
+                            <span>pierrefonseca@gmail.com</span>
+                        </div>
+                        <div class="px-4">
+                            <ul>
+                                <form action="/contacted.html" method="post" class="">
+                                    <li>
+                                        <label>Name:
+                                            <input type="text" id="name" class="flex-grow">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>Email:
+                                            <input type="email" id="email" class="flex-grow">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="message">Message:
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <textarea id="message" class="h-32"></textarea>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <button type="submit">Send message</button>
+                                    </li>
+                                </form>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="h-16 bg-contact-card-b bg-no-repeat bg-cover"></div>
+                </div>
+            </div>
+        </div>
         <div data-include="/common/footer.html" class="footer-container"></div>
     </div>
 </div>

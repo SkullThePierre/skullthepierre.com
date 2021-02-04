@@ -7,6 +7,8 @@ module.exports = {
         'pierre-tall': "url('/img/bgs/background.png')",
         'contact-page-wide': "url('/img/bgs/bg-contact-wide.png')",
         'contact-page-tall': "url('/img/bgs/bg-contact-tall.png')",
+        'contact-card': "url('/img/bgs/bg-contact-card.png')",
+        'contact-card-b': "url('/img/bgs/bg-contact-card-bottom.png')",
       }),
 
       screens: {
