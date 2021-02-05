@@ -14,6 +14,11 @@ module.exports = {
       screens: {
         'lg': '1080px', // re-define screen-lg to 1080px.
       },
+
+      gridAutoColumns: {
+        '1': 'calc(100%)',
+        '2': 'calc(50%)',
+      }
     },
   },
   variants: {
