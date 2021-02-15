@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 @layer base{
+
+    body {
+        background-image: url("/img/bgs/bg-skulls/skull-13.png"),
+        url("/img/bgs/bg-skulls/skull-11.png"),
+        url("/img/bgs/bg-skulls/skull-7.png"),
+        url("/img/bgs/bg-skulls/skull-5.png"),
+        url("/img/bgs/bg-skulls/skull-3.png"),
+        url("/img/bgs/bg-skulls/skull-2.png"),
+        url("/img/bgs/bg-skulls/skull-0.png");
+    }
+
     .navbar-container {
         height: 60px;
     }
