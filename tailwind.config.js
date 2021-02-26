@@ -4,11 +4,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'pierre-tall': "url('/img/bgs/background.png')",
-        'contact-page-wide': "url('/img/bgs/bg-contact-wide.png')",
-        'contact-page-tall': "url('/img/bgs/bg-contact-tall.png')",
-        'contact-card': "url('/img/bgs/bg-contact-card.png')",
-        'contact-card-b': "url('/img/bgs/bg-contact-card-bottom.png')",
+        'pierre-tall': "url('/img/bgs/background.jpg')",
+        'contact-page-wide': "url('/img/bgs/bg-contact-wide.jpg')",
+        'contact-page-tall': "url('/img/bgs/bg-contact-tall.jpg')",
+        'contact-card': "url('/img/bgs/bg-contact-card.jpg')",
+        'contact-card-b': "url('/img/bgs/bg-contact-card-bottom.jpg')",
         'under-construction': "url('/img/bgs/bg-under-construction.jpg')"
       }),
 
