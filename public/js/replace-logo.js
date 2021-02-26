@@ -1,3 +1,9 @@
+//Load youtube video in background after the page is loaded.
+window.onload = function (){
+    let v = $('#main-video')
+    v.attr('src', 'https://www.youtube.com/embed/JTGkzheKoEI')
+}
+
 //Detect when skp-centre-logo is in the middle of the screen.
 let skpLogo = $('#skp-logo');
 let timeout = null;
