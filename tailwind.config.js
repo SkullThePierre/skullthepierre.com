@@ -1,5 +1,9 @@
 module.exports = {
-  purge: [],
+  NODE_ENV: process.env.NODE_ENV || 'development',
+  purge: [
+      './public/**/*.html',
+      './public/**/*.js',
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
