@@ -9,6 +9,7 @@ module.exports = {
         'contact-page-tall': "url('/img/bgs/bg-contact-tall.png')",
         'contact-card': "url('/img/bgs/bg-contact-card.png')",
         'contact-card-b': "url('/img/bgs/bg-contact-card-bottom.png')",
+        'under-construction': "url('/img/bgs/bg-under-construction.jpg')"
       }),
 
       screens: {

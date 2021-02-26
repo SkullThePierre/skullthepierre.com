@@ -4327,6 +4327,10 @@ body {
   background-image: url('/img/bgs/bg-contact-card-bottom.png');
 }
 
+.bg-under-construction {
+  background-image: url('/img/bgs/bg-under-construction.jpg');
+}
+
 .from-transparent {
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -34977,6 +34981,10 @@ body {
     background-image: url('/img/bgs/bg-contact-card-bottom.png');
   }
 
+  .sm\:bg-under-construction {
+    background-image: url('/img/bgs/bg-under-construction.jpg');
+  }
+
   .sm\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -65547,6 +65555,10 @@ body {
 
   .md\:bg-contact-card-b {
     background-image: url('/img/bgs/bg-contact-card-bottom.png');
+  }
+
+  .md\:bg-under-construction {
+    background-image: url('/img/bgs/bg-under-construction.jpg');
   }
 
   .md\:from-transparent {
@@ -96121,6 +96133,10 @@ body {
     background-image: url('/img/bgs/bg-contact-card-bottom.png');
   }
 
+  .lg\:bg-under-construction {
+    background-image: url('/img/bgs/bg-under-construction.jpg');
+  }
+
   .lg\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -126693,6 +126709,10 @@ body {
     background-image: url('/img/bgs/bg-contact-card-bottom.png');
   }
 
+  .xl\:bg-under-construction {
+    background-image: url('/img/bgs/bg-under-construction.jpg');
+  }
+
   .xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -157263,6 +157283,10 @@ body {
 
   .\32xl\:bg-contact-card-b {
     background-image: url('/img/bgs/bg-contact-card-bottom.png');
+  }
+
+  .\32xl\:bg-under-construction {
+    background-image: url('/img/bgs/bg-under-construction.jpg');
   }
 
   .\32xl\:from-transparent {
