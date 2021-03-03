@@ -647,10 +647,6 @@ body {
   margin-bottom: calc(4rem * var(--tw-space-y-reverse));
 }
 
-.bg-transparent {
-  background-color: transparent;
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
@@ -736,6 +732,10 @@ body {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.font-compHand {
+  font-family: compHand;
+}
+
 .h-16 {
   height: 4rem;
 }
@@ -746,6 +746,11 @@ body {
 
 .h-full {
   height: 100%;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-5xl {
@@ -966,6 +971,12 @@ body {
     -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
             animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
+}
+
+@font-face {
+  font-family: 'comphand';
+
+  src: local('CompHand'), url('/fonts/CompHand.ttf');
 }
 
 @media (min-width: 640px) {
