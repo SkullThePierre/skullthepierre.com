@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'comphand';
+    src: local('CompHand'), url('/fonts/CompHand.ttf');
+}
+
 @layer base{
 
     body {
