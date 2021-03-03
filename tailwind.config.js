@@ -23,6 +23,10 @@ module.exports = {
       gridAutoColumns: {
         '1': 'calc(100%)',
         '2': 'calc(50%)',
+      },
+
+      fontFamily: {
+        'compHand': ['compHand']
       }
     },
   },
