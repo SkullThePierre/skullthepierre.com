@@ -20,7 +20,7 @@
                         </div>
                         <div class="px-4">
                             <ul>
-                                <form action="//formspree.io/f/mqkgvokz" method="POST" class="">
+                                <form action="https://formspree.io/f/mqkgvokz" id="contactForm" method="POST" class="">
                                     <li>
                                         <label>Name:
                                             <input type="text" name="name" required class="flex-grow">
@@ -41,8 +41,9 @@
                                         </label>
                                     </li>
                                     <li>
-                                        <button type="submit">Send message</button>
+                                        <button id="sendMessage">Send message</button>
                                     </li>
+                                    <p id="status"></p>
                                 </form>
                             </ul>
                         </div>
@@ -56,4 +57,5 @@
 </div>
 </body>
 <script src="js/load-common.js"></script>
+<script src="/js/submit_form.js"></script>
 </html>
