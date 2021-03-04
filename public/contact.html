@@ -20,15 +20,15 @@
                         </div>
                         <div class="px-4">
                             <ul>
-                                <form action="/contacted.html" method="post" class="">
+                                <form action="https://formspree.io/f/mqkgvokz" id="contactForm" method="POST" class="">
                                     <li>
                                         <label>Name:
-                                            <input type="text" id="name" class="flex-grow">
+                                            <input type="text" name="name" required class="flex-grow">
                                         </label>
                                     </li>
                                     <li>
                                         <label>Email:
-                                            <input type="email" id="email" class="flex-grow">
+                                            <input type="email" name="_replyto" required class="flex-grow">
                                         </label>
                                     </li>
                                     <li>
@@ -37,12 +37,13 @@
                                     </li>
                                     <li>
                                         <label>
-                                            <textarea id="message" class="h-32"></textarea>
+                                            <textarea id="message" name="message" required class="h-32"></textarea>
                                         </label>
                                     </li>
                                     <li>
-                                        <button type="submit">Send message</button>
+                                        <button id="sendMessage">Send message</button>
                                     </li>
+                                    <p id="status"></p>
                                 </form>
                             </ul>
                         </div>
@@ -56,4 +57,5 @@
 </div>
 </body>
 <script src="js/load-common.js"></script>
+<script src="/js/submit_form.js"></script>
 </html>
