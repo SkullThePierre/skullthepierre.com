@@ -20,15 +20,15 @@
                         </div>
                         <div class="px-4">
                             <ul>
-                                <form action="/contacted.html" method="post" class="">
+                                <form action="//formspree.io/f/mqkgvokz" method="POST" class="">
                                     <li>
                                         <label>Name:
-                                            <input type="text" id="name" class="flex-grow">
+                                            <input type="text" name="name" required class="flex-grow">
                                         </label>
                                     </li>
                                     <li>
                                         <label>Email:
-                                            <input type="email" id="email" class="flex-grow">
+                                            <input type="email" name="_replyto" required class="flex-grow">
                                         </label>
                                     </li>
                                     <li>
@@ -37,7 +37,7 @@
                                     </li>
                                     <li>
                                         <label>
-                                            <textarea id="message" class="h-32"></textarea>
+                                            <textarea id="message" name="message" required class="h-32"></textarea>
                                         </label>
                                     </li>
                                     <li>
