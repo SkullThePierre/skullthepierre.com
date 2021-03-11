@@ -27,6 +27,10 @@ module.exports = {
 
       fontFamily: {
         'compHand': ['compHand']
+      },
+
+      gridTemplateColumns: {
+        'release': 'auto max-content'
       }
     },
   },
