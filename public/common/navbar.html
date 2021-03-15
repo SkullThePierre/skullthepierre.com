@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<header class="bg-black flex-grow text-3xl font-navbar">
-    <div class="flex">
-        <label for="navbar-toggle" class="cursor-pointer sm:hidden px-6 py-6">
-            <svg class="fill-current text-gray-900" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </label>
-        <input type="checkbox" id="navbar-toggle" class="hidden">
-        <div class="hidden sm:flex sm:w-full" id="navbar-container">
+<header class="text-3xl font-navbar">
+    <label for="navbar-toggle" class="cursor-pointer block sm:hidden absolute p-4 bg-white w-max">
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </label>
+    <div class="text-center text-white font-indieFlower p-4 sm:hidden" id="title-text"></div>
+    <input type="checkbox" id="navbar-toggle" class="hidden toggle">
+    <div class="sm:flex sm:w-full bg-black hidden" id="navbar-container">
             <nav class="flex-grow">
                 <div class="sm:flex text-white flex-grow">
 
@@ -32,5 +32,4 @@
                 </div>
             </nav>
         </div>
-    </div>
 </header>
