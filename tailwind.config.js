@@ -26,7 +26,7 @@ module.exports = {
       },
 
       fontFamily: {
-        'compHand': ['compHand']
+        'navbar': ['CompHand']
       },
 
       gridTemplateColumns: {

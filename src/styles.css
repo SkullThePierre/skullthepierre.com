@@ -1,11 +1,8 @@
+@import url('https://fontlibrary.org/face/comphand');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-    font-family: 'comphand';
-    src: local('CompHand'), url('/fonts/CompHand.ttf');
-}
 
 @layer base{
 
