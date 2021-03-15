@@ -17,8 +17,11 @@
         url("/img/bgs/bg-skulls/skull-0.png");
     }
 
-    .navbar-container {
-        height: 60px;
+    .menu-toggle {
+        @apply block absolute cursor-pointer
+                sm:hidden p-4 w-max
+                bg-white rounded-full
+                z-9999
     }
 
     #navbar-toggle:checked + #navbar-container {
