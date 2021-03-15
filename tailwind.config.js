@@ -32,11 +32,25 @@ module.exports = {
 
       gridTemplateColumns: {
         'release': 'auto max-content'
-      }
+      },
+
+      keyframes: {
+        wiggle: {
+          '0%, 100%': {transform: 'rotate(-12deg)'},
+          '50%': {transform: 'rotate(12deg)'},
+        }
+      },
+
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
+      },
+
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      animation: ['hover', 'focus'],
+    },
   },
   plugins: [],
 }
