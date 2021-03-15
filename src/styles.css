@@ -1,11 +1,9 @@
+@import url('https://fontlibrary.org/face/comphand');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-    font-family: 'comphand';
-    src: local('CompHand'), url('/fonts/CompHand.ttf');
-}
 
 @layer base{
 

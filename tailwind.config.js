@@ -26,7 +26,8 @@ module.exports = {
       },
 
       fontFamily: {
-        'compHand': ['compHand']
+        'navbar': ['CompHandMedium'],
+        'indieFlower': ['"Indie Flower"', 'cursive']
       },
 
       gridTemplateColumns: {
