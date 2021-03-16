@@ -38,6 +38,10 @@
         height: 1546px;
     }
 
+    .content {
+        height: calc(100vh - 74px)
+    }
+
     .footer-container {
         height: 180px;
         background-color: black;
