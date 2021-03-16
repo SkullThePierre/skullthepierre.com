@@ -45,6 +45,10 @@ module.exports = {
         wiggle: 'wiggle 1s ease-in-out infinite',
       },
 
+      zIndex: {
+        '9999': 9999
+      }
+
     },
   },
   variants: {
