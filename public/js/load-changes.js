@@ -24,8 +24,8 @@ function main(){
         $('#titleText').text(metaTitle.attr('content'))
     } else {
         console.log("Hiding")
-        $('#titleText').css('display', 'none')
-        $('#nav-link-filler').css('display', 'block')
+        $('#titleText').addClass('hidden')
+        $('#nav-link-filler').removeClass('hidden')
     }
 }
 
