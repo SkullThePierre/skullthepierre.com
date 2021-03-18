@@ -19,34 +19,33 @@
         <div class="flex justify-center md:justify-end">
             <div class="flex flex-col p-4 max-w-lg" style="width: 33rem">
                 <div class="bg-contact-card font-compHandMedium text-2xl">
-                    <div class="flex flex-col text-center p-4">
-                        <span>Contact</span>
-                        <span>pierrefonseca@gmail.com</span>
+                    <div class="flex flex-col text-center text-3xl p-4">
+                        <strong>Contact</strong>
                     </div>
                     <div class="p-4">
                         <form action="https://formspree.io/f/mgepjbky" id="contactForm" method="POST"
-                              class="grid grid-cols-4 gap-4">
+                              class="grid grid-cols-6 gap-4">
                             <label for="name">Name:</label>
-                            <input type="text" name="name" id="name" class="w-full col-span-3" required>
-
+                            <input type="text" name="name" id="name" class="w-full col-span-5" required>
 
                             <label for="_replyto">Email:</label>
-                            <input type="email" name="_replyto" id="_replyto" class="w-full col-span-3" required>
+                            <input type="email" name="_replyto" id="_replyto" class="w-full col-span-5" required>
 
 
-                            <div class="grid col-span-4">
+                            <div class="grid col-span-6">
                                 <label for="message">Message:</label>
                                 <textarea id="message" name="message"  class="w-full h-32" required></textarea>
                             </div>
 
-                            <label class="col-span-4">
+                            <label class="col-span-6">
                                 <input type="checkbox" name="mailing_list">
                                 Join mailing list!
                             </label>
 
-                            <button class="col-span-2" id="sendMessage">Send message</button>
+                            <button class="rounded-xl bg-gray-100 hover:bg-gray-300 col-span-3" id="sendMessage">Send message</button>
+                            <div class="col-span-6"></div>
 
-                            <p id="status"></p>
+                            <p id="status" class="col-span-6"></p>
                         </form>
                     </div>
                 </div>
