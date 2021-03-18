@@ -3,21 +3,26 @@ $(document).ready(function() {
     // get the form elements defined in your form HTML above
 
     const form = $("#contactForm")[0];
-    const button = $("#sendMessage")[0];
-    const status = $("#status")[0];
+    const button = $("#sendMessage");
+    const status = $("#status");
 
     // Success and Error functions for after the form is submitted
 
     function success() {
-        form.reset();
-        $(button).off("click")
-        button.setAttribute("id", "send_disabled")
-        button.innerText = "Thanks!"
-        status.innerText = "I'll get back to you soon :)";
+        form.reset()
+
+        button.off("click")
+        button.removeClass('bg-gray-100 hover:bg-gray-300')
+        button.addClass('bg-green-500')
+        button.text("Thanks!")
+        
+        status.addClass('text-green-500')
+        status.text("I'll get back to you soon :)");
     }
 
     function error() {
-        status.innerText = "Oops! There was a problem. Please try again.";
+        status.addClass('text-red-500')
+        status.text("Oops! There was a problem. Please try again.");
     }
 
     // handle the form submission event
@@ -42,7 +47,6 @@ function checkValidity(){
             return false
         }
     })
-    console.log(valid)
     return valid;
 }
 
