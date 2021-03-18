@@ -1,3 +1,6 @@
+@import url('https://fontlibrary.org/face/comphand');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,9 +16,16 @@
         url("/img/bgs/bg-skulls/skull-2.png"),
         url("/img/bgs/bg-skulls/skull-0.png");
     }
-
+    
     .navbar-container {
-        height: 60px;
+        height: auto;
+    }
+
+    .menu-toggle {
+        @apply block absolute cursor-pointer
+                sm:hidden p-4 w-max
+                bg-white rounded-full
+                z-9999
     }
 
     #navbar-toggle:checked + #navbar-container {
@@ -23,15 +33,22 @@
     }
 
     .navbar-link {
-        @apply flex sm:p-4 py-3 px-0 block border-b-2 border-transparent hover:bg-indigo-400 flex-grow items-center justify-center;
+        @apply flex sm:p-4 py-3 px-0 block border-b-2 border-transparent flex-grow items-center justify-center
+                transition duration-100 ease-in-out
+                transform hover:animate-wiggle;
     }
 
     .main-body {
-        height: 1560px;
+        height: 1546px;
+    }
+
+    .content {
+        height: calc(100vh - 74px)
     }
 
     .footer-container {
         height: 180px;
+        background-color: black;
     }
 
     .sm-link {

@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<header class="bg-transparent flex-grow">
-    <div class="flex">
-        <label for="navbar-toggle" class="cursor-pointer sm:hidden px-6 py-6">
-            <svg class="fill-current text-gray-900" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </label>
-        <input type="checkbox" id="navbar-toggle" class="hidden">
-        <div class="hidden sm:flex sm:w-full" id="navbar-container">
-            <nav class="flex-grow">
-                <div class="sm:flex text-white flex-grow">
-                    <a href="/merchandise.html" class="navbar-link">
-                        <span>Merch</span>
-                    </a>
+<header class="text-3xl font-compHandMedium">
+    <label for="navbar-toggle" class="menu-toggle">
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </label>
+    <div class="text-center text-white bg-black p-4 font-indieFlower sm:hidden" id="titleText"></div>
+    <input type="checkbox" id="navbar-toggle" class="hidden toggle">
+    <div class="sm:flex sm:w-full bg-black hidden" id="navbar-container">
+        <nav class="flex-grow">
+            <div class="sm:flex text-white flex-grow">
+                <div class="hidden bg-black sm:hidden" id="nav-link-filler">.</div>
 
-                    <a href="/music.html" class="navbar-link">
-                        <span>Music</span>
-                    </a>
+                <a href="/release.html" class="navbar-link">
+                    <span>Releases</span>
+                </a>
 
-                    <a href="/" class="navbar-link">
-                        <span>SKP</span>
-                    </a>
+                <a href="/merchandise.html" class="navbar-link">
+                    <span>Merch</span>
+                </a>
+                <a href="/" class="navbar-link">
+                    <img class="max-h-10" src="img/logos/skp-logo-main.png" alt="">
+                </a>
 
-                    <a href="/videos.html" class="navbar-link">
-                        <span>Videos</span>
-                    </a>
+                <a href="/videos.html" class="navbar-link">
+                    <span>Videos</span>
+                </a>
 
-                    <a href="/contact.html" class="navbar-link">
-                        <span>Contact</span>
-                    </a>
-                </div>
-            </nav>
-        </div>
+                <a href="/contact.html" class="navbar-link">
+                    <span>Contact</span>
+                </a>
+            </div>
+        </nav>
     </div>
 </header>
