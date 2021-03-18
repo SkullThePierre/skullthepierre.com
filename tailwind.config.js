@@ -7,14 +7,18 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      backgroundImage: theme => ({
+      backgroundImage: {
         'pierre-tall': "url('/img/bgs/background.jpg')",
         'contact-page-wide': "url('/img/bgs/bg-contact-wide.jpg')",
         'contact-page-tall': "url('/img/bgs/bg-contact-tall.jpg')",
         'contact-card': "url('/img/bgs/bg-contact-card.jpg')",
         'contact-card-b': "url('/img/bgs/bg-contact-card-bottom.png')",
         'under-construction': "url('/img/bgs/bg-under-construction.jpg')"
-      }),
+      },
+
+      outline: {
+        red: '2px solid #dd0000',
+      },
 
       screens: {
         'lg': '1080px', // re-define screen-lg to 1080px.
@@ -26,7 +30,7 @@ module.exports = {
       },
 
       fontFamily: {
-        'navbar': ['CompHandMedium'],
+        'compHandMedium': ['CompHandMedium'],
         'indieFlower': ['"Indie Flower"', 'cursive']
       },
 

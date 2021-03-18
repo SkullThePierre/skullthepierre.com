@@ -16,46 +16,40 @@
 <div class="flex justify-center min-h-screen">
     <div class="container bg-contact-page-tall md:bg-contact-page-wide bg-top bg-no-repeat bg-cover flex-grow max-w-screen-lg">
         <div data-include="/common/navbar.html" class="navbar-container"></div>
-        <div class="content flex justify-center md:justify-end">
-            <div>
-                <div class="flex flex-col p-4">
-                    <div class="bg-contact-card">
-                        <div class="flex flex-col text-center p-4">
-                            <span>Contact</span>
-                            <span>pierrefonseca@gmail.com</span>
-                        </div>
-                        <div class="px-4">
-                            <ul>
-                                <form action="https://formspree.io/f/mgepjbky" id="contactForm" method="POST" class="">
-                                    <li>
-                                        <label>Name:
-                                            <input type="text" name="name" required class="flex-grow">
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>Email:
-                                            <input type="email" name="_replyto" required class="flex-grow">
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="message">Message:
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <textarea id="message" name="message" required class="h-32"></textarea>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <button id="sendMessage">Send message</button>
-                                    </li>
-                                    <p id="status"></p>
-                                </form>
-                            </ul>
-                        </div>
+        <div class="flex justify-center md:justify-end">
+            <div class="flex flex-col p-4 max-w-lg" style="width: 33rem">
+                <div class="bg-contact-card font-indieFlower text-xl">
+                    <div class="flex flex-col text-center text-3xl p-4">
+                        <strong>Contact</strong>
                     </div>
-                    <div class="h-16 bg-contact-card-b bg-no-repeat bg-cover"></div>
+                    <div class="p-4">
+                        <form action="https://formspree.io/f/mgepjbky" id="contactForm" method="POST"
+                              class="grid grid-cols-6 gap-4">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" class="w-full col-span-5 font-sans" required>
+
+                            <label for="_replyto">Email:</label>
+                            <input type="email" name="_replyto" id="_replyto" class="w-full col-span-5 font-sans" required>
+
+
+                            <div class="grid col-span-6">
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message"  class="w-full h-32 font-sans" required></textarea>
+                            </div>
+
+                            <label class="col-span-6">
+                                <input type="checkbox" name="mailing_list">
+                                Join mailing list!
+                            </label>
+
+                            <button class="rounded-xl bg-gray-100 hover:bg-gray-300 col-span-3" id="sendMessage">Send message</button>
+                            <div class="col-span-6"></div>
+
+                            <p id="status" class="col-span-6"></p>
+                        </form>
+                    </div>
                 </div>
+                <div class="h-16 bg-contact-card-b bg-no-repeat bg-cover"></div>
             </div>
         </div>
         <div data-include="/common/footer.html" class="footer-container"></div>
