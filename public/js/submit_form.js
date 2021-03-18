@@ -23,11 +23,28 @@ $(document).ready(function() {
     // handle the form submission event
 
     $(button).on('click', function(e) {
+        console.log("Sending data!")
         e.preventDefault();
-        let data = new FormData(form);
-        sendData(form.method, form.action, data, success, error);
+        if (checkValidity()) {
+            let data = new FormData(form);
+            sendData(form.method, form.action, data, success, error);
+        } else {
+            error()
+        }
     })
 });
+
+function checkValidity(){
+    let valid = true
+    $('[required=""]').each(function(){
+        if( $(this).val() === "" ){
+            valid = false
+            return false
+        }
+    })
+    console.log(valid)
+    return valid;
+}
 
 // helper function for sending an AJAX request
 

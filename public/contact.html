@@ -24,34 +24,29 @@
                             <span>Contact</span>
                             <span>pierrefonseca@gmail.com</span>
                         </div>
-                        <div class="px-4">
-                            <ul>
-                                <form action="https://formspree.io/f/mgepjbky" id="contactForm" method="POST" class="">
-                                    <li>
-                                        <label>Name:
-                                            <input type="text" name="name" required class="flex-grow">
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>Email:
-                                            <input type="email" name="_replyto" required class="flex-grow">
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="message">Message:
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <textarea id="message" name="message" required class="h-32"></textarea>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <button id="sendMessage">Send message</button>
-                                    </li>
-                                    <p id="status"></p>
-                                </form>
-                            </ul>
+                        <div class="p-4">
+                            <form action="https://formspree.io/f/mgepjbky" id="contactForm" method="POST" class="">
+                                <label>Name:
+                                    <input type="text" name="name" class="flex-grow" required>
+                                </label>
+
+                                <label>Email:
+                                    <input type="email" name="_replyto" class="flex-grow" required>
+                                </label>
+
+                                <label for="message">Message:
+                                    <textarea id="message" name="message"  class="h-32" required></textarea>
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="mailing_list">
+                                    Also join mailing list.
+                                </label>
+
+                                <button id="sendMessage">Send message</button>
+
+                                <p id="status"></p>
+                            </form>
                         </div>
                     </div>
                     <div class="h-16 bg-contact-card-b bg-no-repeat bg-cover"></div>
