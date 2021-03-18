@@ -26,7 +26,7 @@ module.exports = {
       },
 
       fontFamily: {
-        'navbar': ['CompHandMedium'],
+        'compHandMedium': ['CompHandMedium'],
         'indieFlower': ['"Indie Flower"', 'cursive']
       },
 
