@@ -5,6 +5,7 @@ $(document).ready(function() {
     const form = $("#contactForm")[0];
     const button = $("#sendMessage");
     const status = $("#status");
+    const requiredField = 'outline-red';
 
     // Success and Error functions for after the form is submitted
 
@@ -15,7 +16,7 @@ $(document).ready(function() {
         button.removeClass('bg-gray-100 hover:bg-gray-300')
         button.addClass('bg-green-500')
         button.text("Thanks!")
-        
+
         status.addClass('text-green-500')
         status.text("I'll get back to you soon :)");
     }
@@ -44,7 +45,7 @@ function checkValidity(){
     $('[required=""]').each(function(){
         if( $(this).val() === "" ){
             valid = false
-            return false
+            $(this).addClass('outline-red')
         }
     })
     return valid;

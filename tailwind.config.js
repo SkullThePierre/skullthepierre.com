@@ -16,6 +16,10 @@ module.exports = {
         'under-construction': "url('/img/bgs/bg-under-construction.jpg')"
       },
 
+      outline: {
+        red: '2px solid #dd0000',
+      },
+
       screens: {
         'lg': '1080px', // re-define screen-lg to 1080px.
       },
