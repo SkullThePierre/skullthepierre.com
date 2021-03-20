@@ -23,7 +23,6 @@ function main(){
     if (metaTitle.exists()) {
         $('#titleText').text(metaTitle.attr('content'))
     } else {
-        console.log("Hiding")
         $('#titleText').addClass('hidden')
         $('#nav-link-filler').removeClass('hidden')
     }
