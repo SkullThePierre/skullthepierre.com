@@ -1,7 +1,7 @@
 //Load youtube video in background after the page is loaded.
 window.onload = function (){
     let v = $('#main-video')
-    v.attr('src', 'https://www.youtube.com/embed/0MKKpST1F78')
+    v.attr('src', 'https://www.youtube-nocookie.com/embed/0MKKpST1F78')
 }
 
 //Detect when skp-centre-logo is in the middle of the screen.
