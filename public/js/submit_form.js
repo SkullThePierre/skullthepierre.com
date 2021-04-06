@@ -1,11 +1,11 @@
-// get the form elements defined in your form HTML above
+// Functions to submit data on the contact page.
 
+// get the form elements defined in your form HTML above
 const form = $("#contactForm");
 const button = $("#sendMessage");
 const status = $("#status");
 
 // Success and Error functions for after the form is submitted
-
 function success() {
     form.trigger('reset')
 
@@ -23,13 +23,13 @@ function error() {
     status.text("Oops! There was a problem. Please try again.");
 }
 
+// Execute when data entered is invalid.
 function invalidData(){
     status.addClass('text-red-500')
     status.text("Please fill in these boxes!");
 }
 
 // handle the form submission event
-
 $(button).on('click', function(e) {
     e.preventDefault();
     if (checkValidity(form)) {
@@ -37,8 +37,8 @@ $(button).on('click', function(e) {
         let mailingList = form.find(["name='mailing_list'"])
         if ( form.find(mailingList.is(':checked')) ){
             let email = form.find("[name='_replyto']").val()
+            // Link to mailing-list form in formspree.io:
             let url = "https://formspree.io/f/mwkaekao"
-            console.log(url + " " + email)
             addToMailingList(url, form[0].method, email)
         }
         sendData(form[0].action, form[0].method, data)
@@ -47,6 +47,7 @@ $(button).on('click', function(e) {
     }
 })
 
+// Check if data entered is valid.
 function checkValidity(form){
     let valid = true
     form.find('[required=""]').each(function(){
@@ -58,7 +59,7 @@ function checkValidity(form){
     return valid;
 }
 
-
+// Send the data to formspree.io contact form.
 function sendData(url, method, data){
     $.ajax(url,{
         method: method,
@@ -77,6 +78,7 @@ function sendData(url, method, data){
         })
 }
 
+// Send data to formspree.io mailing-list form.
 function addToMailingList(url, method, email){
     $.ajax(url, {
         method: method,

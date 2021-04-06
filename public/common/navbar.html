@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <header class="text-3xl font-compHandMedium">
     <label for="navbar-toggle" class="menu-toggle">
+        <!-- Menu icon that shows up on mobile -->
         <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
     </label>
-    <div class="text-center text-white bg-black p-4 font-indieFlower sm:hidden" id="titleText"></div>
+    <div class="text-center text-white bg-black p-4 font-indieFlower sm:hidden" id="titleText">
+        <!-- Secondary title that gets added later. -->
+    </div>
     <input type="checkbox" id="navbar-toggle" class="hidden toggle">
     <div class="sm:flex sm:w-full bg-black hidden" id="navbar-container">
+        <!-- The navbar: -->
         <nav class="flex-grow">
             <div class="sm:flex text-white flex-grow">
                 <div class="hidden bg-black sm:hidden" id="nav-link-filler">.</div>
 
+                <!-- Links in the navbar: -->
                 <a href="/release.html" class="navbar-link">
                     <span>Releases</span>
                 </a>
