@@ -2,7 +2,7 @@
 window.onload = function (){
     let v = $('#main-video')
     // Link for main page video. Only change the code after /embed/:
-    v.attr('src', 'https://www.youtube-nocookie.com/embed/mOJPFDT5i_E')
+    v.attr('src', 'https://www.youtube-nocookie.com/embed/PEiYx1gQaMY')
 }
 
 //Detect when skp-centre-logo is in the middle of the screen.
