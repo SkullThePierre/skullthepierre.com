@@ -12,8 +12,8 @@
     "cross-env": "^7.0.3"
   },
   "scripts": {
-    "build-css-dev": "tailwindcss build src/styles.css -o public/css/styles.css",
-    "build-css-prod": "cross-env NODE_ENV=production tailwindcss build src/styles.css -o public/css/styles.css"
+    "build-css-dev": "cross-env NODE_ENV=development tailwindcss build src/styles.css -o public/css/styles.css",
+    "build-css-prod": "tailwindcss build src/styles.css -o public/css/styles.css"
   },
   "keywords": [],
   "author": "",
