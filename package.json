@@ -8,12 +8,8 @@
     "postcss": "^8.2.1",
     "tailwindcss": "^2.0.2"
   },
-  "devDependencies": {
-    "cross-env": "^7.0.3"
-  },
   "scripts": {
-    "build-css-dev": "tailwindcss build src/styles.css -o public/css/styles.css",
-    "build-css-prod": "cross-env NODE_ENV=production tailwindcss build src/styles.css -o public/css/styles.css"
+    "build-css": "tailwindcss build src/styles.css -o public/css/styles.css"
   },
   "keywords": [],
   "author": "",

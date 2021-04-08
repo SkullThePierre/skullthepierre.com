@@ -1,4 +1,4 @@
-version: 1
+version: 1.0.1
 applications:
   - frontend:
       phases:
@@ -8,7 +8,7 @@ applications:
             - npm ci
         build:
           commands:
-            - npm run build-css-prod
+            - npm run build-css
       artifacts:
         baseDirectory: /
         files:
