@@ -1,6 +1,5 @@
-# skullthepierre.com
-Portfolio website made for Pierre Fonseca
-Hosted on AWS Amplify.
-Created using TailwindCSS.
+# Skull The Pierre
 
-Author: Parth Thakur
+Check it out: [skullthepierre.com](https://www.skullthepierre.com)
+
+Author: [Parth Thakur](www.github.com/ParthThakur)
