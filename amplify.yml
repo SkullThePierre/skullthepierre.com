@@ -4,8 +4,7 @@ applications:
       phases:
         preBuild:
           commands:
-            - npm cache clean --force
-            - npm install
+            - npm ci
         build:
           commands:
             - npm run build-css
