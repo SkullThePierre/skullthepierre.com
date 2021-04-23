@@ -5,14 +5,14 @@ applications:
         preBuild:
           commands:
             - npm install
-            - npm ci
         build:
           commands:
             - npm run build-css
+            - npm run build-js
       artifacts:
         baseDirectory: /
         files:
-          - '**/*'
+          - "**/*"
       cache:
         paths: []
     appRoot: public
