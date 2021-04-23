@@ -6,7 +6,12 @@
   "dependencies": {
     "autoprefixer": "^10.1.0",
     "postcss": "^8.2.1",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.0.2",
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.35.0",
+    "webpack-cli": "^4.6.0"
   },
   "scripts": {
     "build-css": "tailwindcss build src/styles.css -o public/css/styles.css",
@@ -16,11 +21,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.13.16",
-    "@babel/preset-env": "^7.13.15",
-    "babel-loader": "^8.2.2",
-    "webpack": "^5.35.0",
-    "webpack-cli": "^4.6.0"
-  }
+  "devDependencies": {}
 }
