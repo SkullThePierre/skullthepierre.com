@@ -24,25 +24,27 @@ window.onload = function () {
         }, 250);
       }
     });
+
+    // Replace the logo.
+    function replaceLogo() {
+      $(window).off("scroll"); // turn-off detection.
+      skpLogo
+        .addClass(
+          "transition duration-500 ease-out opacity-0 transform scale-150"
+        )
+        .delay(500)
+        .queue(function (next) {
+          $(this).addClass("hidden");
+          $(".video-container-outer").removeClass("hidden");
+          next();
+        }); //fade it out.
+
+      //Fade video in.
+      $("#main-video")
+        .delay(600)
+        .queue(function (next) {
+          $(this).addClass("transition duration-1000 ease-in opacity-100");
+        });
+    }
   }
 };
-
-// Replace the logo.
-function replaceLogo() {
-  $(window).off("scroll"); // turn-off detection.
-  skpLogo
-    .addClass("transition duration-500 ease-out opacity-0 transform scale-150")
-    .delay(500)
-    .queue(function (next) {
-      $(this).addClass("hidden");
-      $(".video-container-outer").removeClass("hidden");
-      next();
-    }); //fade it out.
-
-  //Fade video in.
-  $("#main-video")
-    .delay(600)
-    .queue(function (next) {
-      $(this).addClass("transition duration-1000 ease-in opacity-100");
-    });
-}
