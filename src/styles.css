@@ -17,7 +17,8 @@
   }
 
   .navbar-container {
-    height: auto;
+    height: 75px;
+    top: 0;
     @apply z-8888 absolute w-full;
   }
 
@@ -47,6 +48,7 @@
   }
 
   .container {
+    padding-top: 75px;
     padding-bottom: 180px;
     position: relative;
   }
