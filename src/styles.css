@@ -29,7 +29,11 @@
   }
 
   #navbar-toggle:checked + #navbar-container {
-    display: block;
+    @apply transform ease-in-out duration-300 translate-y-0 sm:transform-none;
+  }
+
+  #navbar-toggle:not(:checked) + #navbar-container {
+    @apply transform ease-in-out duration-300 -translate-y-full sm:transform-none;
   }
 
   .navbar-link {
