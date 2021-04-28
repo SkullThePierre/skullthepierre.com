@@ -18,6 +18,7 @@
 
   .navbar-container {
     height: auto;
+    @apply z-8888 absolute w-full;
   }
 
   .menu-toggle {
