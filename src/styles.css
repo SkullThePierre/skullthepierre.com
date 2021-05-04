@@ -81,4 +81,17 @@
   .embedded-video {
     @apply absolute justify-self-center w-full h-full mx-0 my-auto;
   }
+
+  .cookie-banner-container {
+    @apply grid justify-center fixed bottom-0 bg-black w-full;
+    max-width: inherit;
+  }
+
+  .cookie-banner {
+    @apply p-0.5 text-white font-indieFlower;
+  }
+
+  .cookie-ok {
+    background-color: green;
+  }
 }
