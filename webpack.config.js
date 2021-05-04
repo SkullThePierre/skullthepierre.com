@@ -7,6 +7,12 @@ module.exports = {
     path: path.join(__dirname, "public/js"),
     filename: "main.js",
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+    }),
+  ],
   module: {
     rules: [
       {
@@ -22,7 +28,3 @@ module.exports = {
     minimize: true,
   },
 };
-
-new webpack.ProvidePlugin({
-  $: "jquery",
-});

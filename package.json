@@ -21,5 +21,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {
+    "jquery": "^3.6.0"
+  }
 }
