@@ -18,4 +18,8 @@ $(document).ajaxStop(function () {
   if (contactRegex.test($(location).attr("href"))) {
     submitForm();
   }
+
+  setTimeout(function () {
+    $(".cookie-banner-container").removeClass("translate-y-full");
+  }, 1500);
 });
