@@ -1,9 +1,6 @@
 // get the form elements defined in your form HTML above
 
-const contactRegex = new RegExp("contact", "i");
-const isContactPage = contactRegex.test($(location).attr("href"));
-
-if (isContactPage) {
+export default function submitForm() {
   const form = $("#contactForm");
   const button = $("#sendMessage");
   const status = $("#status");
