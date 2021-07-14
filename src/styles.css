@@ -16,14 +16,14 @@
       url("/img/bgs/bg-skulls/skull-0.png");
   }
 
-  svg {
-    display: none;
+  body > div > svg {
+    @apply hidden;
   }
 
   .navbar-container {
     height: 75px;
     top: 0;
-    @apply z-8888 absolute w-full;
+    @apply z-8888 absolute w-56 sm:w-full;
   }
 
   .menu-toggle {
@@ -52,9 +52,8 @@
   }
 
   .container {
-    padding-top: 75px;
+    @apply pt-0 sm:pt-75 relative;
     padding-bottom: 222.4px;
-    position: relative;
   }
 
   .footer-container {
