@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <div class="navbar-container">
-  <header class="text-3xl font-compHandMedium">
-    <label for="navbar-toggle" class="menu-toggle">
-      <svg
-        width="24"
-        height="24"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M4 6h16M4 12h16M4 18h16"
-        />
-      </svg>
-    </label>
-    <input type="checkbox" id="navbar-toggle" class="hidden toggle" />
-    <div class="sm:flex sm:w-full bg-black" id="navbar-container">
+  <label for="navbar-toggle" class="menu-toggle">
+    <svg
+      width="24"
+      height="24"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16M4 18h16"
+      />
+    </svg>
+  </label>
+  <input type="checkbox" id="navbar-toggle" class="hidden toggle" />
+  <header class="text-3xl font-compHandMedium" id="navbar-container">
+    <div class="w-screen sm:flex sm:w-full bg-black">
       <div
         class="text-center text-white bg-black p-4 font-indieFlower sm:hidden"
         id="titleText"
@@ -28,22 +28,22 @@
         <div class="sm:flex text-white flex-grow">
           <div class="hidden bg-black sm:hidden" id="nav-link-filler">.</div>
 
-          <a href="/release.html" class="navbar-link">
+          <a href="/release" class="navbar-link">
             <span>Releases</span>
           </a>
 
-          <a href="/merchandise.html" class="navbar-link">
+          <a href="/merch" class="navbar-link">
             <span>Merch</span>
           </a>
           <a href="/" class="navbar-link">
             <img class="max-h-10" src="img/logos/skp-logo-main.png" alt="" />
           </a>
 
-          <a href="/videos.html" class="navbar-link">
+          <a href="/videos" class="navbar-link">
             <span>Videos</span>
           </a>
 
-          <a href="/contact.html" class="navbar-link">
+          <a href="/contact" class="navbar-link">
             <span>Contact</span>
           </a>
         </div>

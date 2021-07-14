@@ -50,6 +50,11 @@ module.exports = {
         8888: 8888,
         9999: 9999,
       },
+
+      spacing: {
+        75: "75px",
+        56: "56px",
+      },
     },
   },
   variants: {

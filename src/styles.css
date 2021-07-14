@@ -16,10 +16,14 @@
       url("/img/bgs/bg-skulls/skull-0.png");
   }
 
+  body > div > svg {
+    @apply hidden;
+  }
+
   .navbar-container {
     height: 75px;
     top: 0;
-    @apply z-8888 absolute w-full;
+    @apply z-8888 absolute w-56 sm:w-full;
   }
 
   .menu-toggle {
@@ -48,13 +52,12 @@
   }
 
   .container {
-    padding-top: 75px;
-    padding-bottom: 180px;
-    position: relative;
+    @apply pt-0 sm:pt-75 relative;
+    padding-bottom: 222.4px;
   }
 
   .footer-container {
-    height: 180px;
+    height: 222.4px;
     background-color: black;
     position: absolute;
     width: 100%;
@@ -93,5 +96,9 @@
 
   .cookie-ok {
     background-color: green;
+  }
+
+  #myShop footer {
+    display: none;
   }
 }
