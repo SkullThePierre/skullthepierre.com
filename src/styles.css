@@ -16,6 +16,10 @@
       url("/img/bgs/bg-skulls/skull-0.png");
   }
 
+  svg {
+    display: none;
+  }
+
   .navbar-container {
     height: 75px;
     top: 0;
@@ -49,12 +53,12 @@
 
   .container {
     padding-top: 75px;
-    padding-bottom: 180px;
+    padding-bottom: 222.4px;
     position: relative;
   }
 
   .footer-container {
-    height: 180px;
+    height: 222.4px;
     background-color: black;
     position: absolute;
     width: 100%;
@@ -93,5 +97,9 @@
 
   .cookie-ok {
     background-color: green;
+  }
+
+  #myShop footer {
+    display: none;
   }
 }

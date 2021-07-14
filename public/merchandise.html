@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,15 +8,52 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
     <title>SKP - Merch</title>
+    <style>
+      #myShop .sprd-breadcrumb {
+        color: white;
+      }
+
+      #myShop svg {
+        display: block;
+      }
+
+      #myShop .sprd-listpage {
+        margin: 0;
+      }
+
+      ::before {
+        --sprd-main3: white;
+      }
+    </style>
   </head>
   <body class="antialiased bg-black">
     <div class="flex justify-center">
       <div class="container flex-grow max-w-screen-lg">
         <div data-include="/common/navbar.html" class="navbar-container"></div>
-        <div class="" data-include="/common/under_construction.html"></div>
+        <div>
+          <div id="myShop">
+            <a href="https://shop.spreadshirt.ie/skull-the-pierre"
+              >skull-the-pierre</a
+            >
+          </div>
+        </div>
+
         <div data-include="/common/footer.html" class="footer-container"></div>
       </div>
     </div>
   </body>
   <script src="js/main.js"></script>
+  <script>
+    var spread_shop_config = {
+      shopName: "skull-the-pierre",
+      locale: "en_IE",
+      prefix: "https://shop.spreadshirt.ie",
+      baseId: "myShop",
+    };
+  </script>
+
+  <script
+    type="text/javascript"
+    src="https://shop.spreadshirt.ie/shopfiles/shopclient/shopclient.nocache.js"
+  ></script>
 </html>
