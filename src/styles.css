@@ -97,4 +97,29 @@
   .cookie-ok {
     background-color: green;
   }
+  #myShop .sprd-tracking-menu__dropup {
+    @apply p-14;
+  }
+
+  #myShop .sprd-product-list {
+    min-height: 25vh;
+  }
+
+  #sprd-footer .sprd-info-footer {
+    @apply bg-black text-gray-400 border-0 p-0 pb-4;
+  }
+
+  #sprd-footer a:hover,
+  #sprd-footer button:hover,
+  #myShop .sprd-breadcrumb {
+    @apply text-white no-underline
+  }
+
+  
+
+  #sprd-footer .sprd-info-footer__contact-col, 
+  #sprd-footer .sprd-service-footer,
+  #sprd-footer .sprd-info-footer__open-shop {
+    @apply hidden;
+  }
 }
