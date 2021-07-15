@@ -23,14 +23,15 @@
   .navbar-container {
     height: 75px;
     top: 0;
-    @apply z-8888 absolute w-56 sm:w-full;
+    @apply z-8888 fixed sm:absolute w-56 sm:w-full max-w-screen-lg;
   }
 
   .menu-toggle {
-    @apply block absolute cursor-pointer
+    @apply block fixed cursor-pointer
                 sm:hidden p-4 w-max
                 bg-white rounded-full
                 z-9999;
+    top: 0
   }
 
   #navbar-toggle:checked + #navbar-container {
