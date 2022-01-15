@@ -103,6 +103,14 @@
     @apply bg-white p-3 self-center absolute z-9999;
   }
 
+  .cover-art {
+    @apply max-h-64;
+  }
+
+  .cover-art > img {
+    @apply h-full;
+  }
+
   #myShop .sprd-tracking-menu__dropup {
     @apply p-14;
   }
