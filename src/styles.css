@@ -98,6 +98,11 @@
   .cookie-ok {
     background-color: green;
   }
+
+  .video-nav-btn {
+    @apply bg-white p-3 self-center absolute z-9999;
+  }
+
   #myShop .sprd-tracking-menu__dropup {
     @apply p-14;
   }
