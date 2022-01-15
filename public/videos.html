@@ -40,16 +40,17 @@
               id="main_video"
             ></iframe>
           </div>
-          <div class="music-videos grid col-span-2 relative" id="video_slider">
+          <div class="music-videos grid col-span-2 relative">
             <svg viewBox="0 0 16 4.5"></svg>
-            <button class="video-nav-btn">
+            <button class="video-nav-btn" id="btn-left">
               <img src="img/logos/arrow-left.svg" alt="" />
             </button>
-            <button class="video-nav-btn" style="right: 0">
+            <button class="video-nav-btn" id="btn-right" style="right: 0">
               <img src="img/logos/arrow-right.svg" alt="" />
             </button>
             <div
               class="grid grid-flow-col gap-4 auto-cols-2 overflow-scroll scroll-hidden"
+              id="video_slider"
             >
               <div class="bg-red-900 h-full relative">
                 <div class="absolute h-full w-full vid_overlay"></div>

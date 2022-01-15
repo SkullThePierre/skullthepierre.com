@@ -7,4 +7,16 @@ export default function videosPage() {
       old_video.attr("src", new_video);
     }
   });
+
+  $("#btn-left").on("click", function () {
+    var leftPos = $("#video_slider").scrollLeft();
+    console.log("srcolling left", leftPos);
+    $("#video_slider").animate({ scrollLeft: leftPos - 400 }, 400);
+  });
+
+  $("#btn-right").on("click", function () {
+    var leftPos = $("#video_slider").scrollLeft();
+    console.log("srcolling right", leftPos);
+    $("#video_slider").animate({ scrollLeft: leftPos + 400 }, 400);
+  });
 }
