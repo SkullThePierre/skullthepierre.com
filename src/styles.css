@@ -31,7 +31,7 @@
                 sm:hidden p-4 w-max
                 bg-white rounded-full
                 z-9999;
-    top: 0
+    top: 0;
   }
 
   #navbar-toggle:checked + #navbar-container {
@@ -98,6 +98,11 @@
   .cookie-ok {
     background-color: green;
   }
+
+  .video-nav-btn {
+    @apply bg-white p-3 self-center absolute z-9999;
+  }
+
   #myShop .sprd-tracking-menu__dropup {
     @apply p-14;
   }
@@ -113,12 +118,10 @@
   #sprd-footer a:hover,
   #sprd-footer button:hover,
   #myShop .sprd-breadcrumb {
-    @apply text-white no-underline
+    @apply text-white no-underline;
   }
 
-  
-
-  #sprd-footer .sprd-info-footer__contact-col, 
+  #sprd-footer .sprd-info-footer__contact-col,
   #sprd-footer .sprd-service-footer,
   #sprd-footer .sprd-info-footer__open-shop {
     @apply hidden;
