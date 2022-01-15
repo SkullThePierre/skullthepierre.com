@@ -28,12 +28,21 @@
         <div data-include="/common/navbar.html" class="navbar-container"></div>
         <div class="grid grid-cols-2 gap-4 p-4 text-center bg-black">
           <div class="music-videos grid col-span-2">
-            <!-- TODO: Make videos better. Resize (16:9) with screen size. -->
-            <!-- TODO: overflow-bottom: hidden. -->
-            <svg class="hidden md:block" viewBox="0 0 16 4.5"></svg>
-            <svg class="md:hidden" viewBox="0 0 16 9"></svg>
+            <svg viewBox="0 0 16 9"></svg>
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/rBNfZdD_vG8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="music-videos grid col-span-2">
+            <svg viewBox="0 0 16 4.5"></svg>
             <div
-              class="grid grid-flow-col gap-4 auto-cols-1 md:auto-cols-2 overflow-scroll scroll-hidden"
+              class="grid grid-flow-col gap-4 auto-cols-2 overflow-scroll scroll-hidden"
             >
               <div class="bg-red-900 h-full">
                 <iframe
