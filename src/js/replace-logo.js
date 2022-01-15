@@ -6,7 +6,7 @@ export default function replaceLogo() {
   //Detect when skp-centre-logo is in the middle of the screen.
   let skpLogo = $("#skp-logo");
   let timeout = null;
-  $(window).scroll(function () {
+  $(window).on("scroll", function () {
     if (!timeout) {
       timeout = setTimeout(function () {
         clearTimeout(timeout);
