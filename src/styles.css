@@ -70,6 +70,19 @@
     @apply flex justify-center space-x-3;
   }
 
+  .music-chnls {
+    @apply col-span-2 pt-4 pb-8 flex justify-center space-x-3;
+  }
+
+  .music-chnls > a {
+    filter: brightness(0.75);
+    @apply w-10 grid items-center;
+  }
+
+  .music-chnls > a:hover {
+    filter: brightness(1);
+  }
+
   .sm-link {
     filter: brightness(0.75);
     @apply w-6 grid items-center;
