@@ -1,14 +1,16 @@
 function get_streaming_links(links) {
   let streaming_links = [];
   $.each(links, function (key, link) {
-    let c_link = `
+    if (link !== "") {
+      let c_link = `
         <div class="sm-list">
             <a href="${link}" class="sm-link" target="_blank">
                 <img src="${sm_logos[key]}" alt="" />
             </a>
         </div>`;
 
-    streaming_links.push(c_link);
+      streaming_links.push(c_link);
+    }
   });
   return streaming_links.join("");
 }

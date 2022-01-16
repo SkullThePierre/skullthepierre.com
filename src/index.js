@@ -23,11 +23,11 @@ $(document).ajaxStop(function () {
     submitForm();
   }
 
-  if (true || videosRegex.test($(location).attr("href"))) {
+  if (videosRegex.test($(location).attr("href"))) {
     videosPage();
   }
 
-  if (true || musicRegex.test($(location).attr("href"))) {
+  if (musicRegex.test($(location).attr("href"))) {
     musicPage();
   }
 

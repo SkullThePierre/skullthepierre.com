@@ -71,7 +71,7 @@
   }
 
   .music-chnls {
-    @apply col-span-2 pt-4 pb-8 flex justify-center space-x-3;
+    @apply md:col-span-2 pt-4 pb-8 flex justify-center space-x-3;
   }
 
   .music-chnls > a {
