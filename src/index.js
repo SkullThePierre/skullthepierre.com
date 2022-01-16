@@ -21,7 +21,7 @@ $(document).ajaxStop(function () {
     submitForm();
   }
 
-  if (videosRegex.test($(location.attr("href")))) {
+  if (videosRegex.test($(location).attr("href"))) {
     videosPage();
   }
 
