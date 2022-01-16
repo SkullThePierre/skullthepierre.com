@@ -15,6 +15,7 @@
         <div class="bg-black pt-4 text-white font-sans tracking-wider">
           <div
             class="grid gap-4 grid-cols-1 md:grid-cols-2 justify-items-center"
+            id="music_cards"
           >
             <div class="music-chnls">
               <a
@@ -49,144 +50,6 @@
                 <img src="/img/logos/bandcamp-icon-white.png" alt="" />
               </a>
             </div>
-            <div class="cover-art">
-              <img src="img/cover-art/frupp.jpg" alt="" />
-              <div
-                class="pt-4 pb-12 grid grid-cols-1 justify-items-center gap-4"
-              >
-                <span>FRUPP</span>
-                <div class="sm-list">
-                  <a
-                    href="https://open.spotify.com/album/1zG2P4xfuRUwWby1AaVn6K"
-                    class="sm-link"
-                    target="_blank"
-                  >
-                    <img src="/img/logos/spotify-icon-white.png" alt="" />
-                  </a>
-                </div>
-                <a class="buy-btn" href="">BUY NOW</a>
-              </div>
-            </div>
-            <div class="cover-art">
-              <img src="img/cover-art/ladida-death-valley.jpg" alt="" />
-              <div
-                class="pt-4 pb-12 grid grid-cols-1 justify-items-center gap-4"
-              >
-                <span>LADIDA DEATH VALLEY</span>
-                <div class="sm-list">
-                  <a
-                    href="https://open.spotify.com/album/34JcnJb6mImxNYwJjb7CmG"
-                    class="sm-link"
-                    target="_blank"
-                  >
-                    <img src="/img/logos/spotify-icon-white.png" alt="" />
-                  </a>
-                </div>
-                <a class="buy-btn" href="">BUY NOW</a>
-              </div>
-            </div>
-            <div class="cover-art">
-              <img src="img/cover-art/aint-you-scared-of-the-wolf.jpg" alt="" />
-              <div
-                class="pt-4 pb-24 grid grid-cols-1 justify-items-center gap-4"
-              >
-                <span>AIN'T YOU SCARED OF THE WOLF</span>
-                <div class="sm-list">
-                  <a
-                    href="https://open.spotify.com/album/7k7wGJARupnmQ8P0z6s9zh"
-                    class="sm-link"
-                    target="_blank"
-                  >
-                    <img src="/img/logos/spotify-icon-white.png" alt="" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="cover-art">
-              <img src="img/cover-art/cinco.jpg" alt="" />
-              <div
-                class="pt-4 pb-24 grid grid-cols-1 justify-items-center gap-4"
-              >
-                <span>CINCO</span>
-                <div class="sm-list">
-                  <a
-                    href="https://open.spotify.com/album/6QM38vZYabd9KX3VohQ6yV"
-                    class="sm-link"
-                    target="_blank"
-                  >
-                    <img src="/img/logos/spotify-icon-white.png" alt="" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="cover-art">
-              <img src="img/cover-art/COS.jpg" alt="" />
-              <div
-                class="pt-4 pb-24 grid grid-cols-1 justify-items-center gap-4"
-              >
-                <span>CITY OF SOUNDS</span>
-                <div class="sm-list">
-                  <a
-                    href="https://open.spotify.com/track/3OZljEMmJaeTZ41SeXt8xD"
-                    class="sm-link"
-                    target="_blank"
-                  >
-                    <img src="/img/logos/spotify-icon-white.png" alt="" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="cover-art">
-              <img src="img/cover-art/on-my-mind.jpg" alt="" />
-              <div
-                class="pt-4 pb-24 grid grid-cols-1 justify-items-center gap-4"
-              >
-                <span>ON YOUR MIND</span>
-                <div class="sm-list">
-                  <a
-                    href="https://open.spotify.com/track/6xWZ49RO4oeK8eJx8qdqHC"
-                    class="sm-link"
-                    target="_blank"
-                  >
-                    <img src="/img/logos/spotify-icon-white.png" alt="" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="cover-art">
-              <img src="img/cover-art/sleepless.jpg" alt="" />
-              <div
-                class="pt-4 pb-24 grid grid-cols-1 justify-items-center gap-4"
-              >
-                <span>SLEEPLESS</span>
-                <div class="sm-list">
-                  <a
-                    href="https://open.spotify.com/album/2k2bi9qGB1Lu2EHbSpXSug"
-                    class="sm-link"
-                    target="_blank"
-                  >
-                    <img src="/img/logos/spotify-icon-white.png" alt="" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="cover-art">
-              <img src="img/cover-art/yellow-horse.jpg" alt="" />
-              <div
-                class="pt-4 pb-24 grid grid-cols-1 justify-items-center gap-4"
-              >
-                <span>YELLOW HORSE</span>
-                <div class="sm-list">
-                  <a
-                    href="https://open.spotify.com/album/4WNIe5wymjJYZJR5kROQrZ"
-                    class="sm-link"
-                    target="_blank"
-                  >
-                    <img src="/img/logos/spotify-icon-white.png" alt="" />
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <div data-include="/common/footer.html" class="footer-container"></div>
@@ -194,4 +57,33 @@
     </div>
   </body>
   <script src="js/main.js"></script>
+  <script>
+    const music_cards = {
+      frupp: {
+        name: "FRUPP",
+        cover: "img/cover-art/frupp.jpg",
+        streaming: {
+          spotify: "https://open.spotify.com/album/1zG2P4xfuRUwWby1AaVn6K",
+          youtube: "https://www.youtube.com/embed/NtpWPGfUTnc",
+        },
+        buybtn: "",
+      },
+      ladida: {
+        name: "LADIDA DEATH VALLEY",
+        cover: "img/cover-art/ladida-death-valley.jpg",
+        streaming: {
+          spotify: "https://open.spotify.com/album/34JcnJb6mImxNYwJjb7CmG",
+        },
+        buybtn: "",
+      },
+    };
+
+    const sm_logos = {
+      spotify: "/img/logos/spotify-icon-white.png",
+      youtube: "/img/logos/youtube-icon-white.png",
+      appleMusic: "/img/logos/apple-music-icon-white.svg",
+      soundcloud: "img/logos/soundclound-icon-white.png",
+      bandcamp: "/img/logos/bandcamp-icon-white.png",
+    };
+  </script>
 </html>
