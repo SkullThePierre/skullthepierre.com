@@ -54,7 +54,7 @@
   }
 
   .container {
-    @apply pt-0 sm:pt-75 relative;
+    @apply bg-black pt-0 sm:pt-75 relative;
     padding-bottom: 222.4px;
   }
 
