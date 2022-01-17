@@ -23,10 +23,6 @@ $(document).ajaxStop(function () {
     submitForm();
   }
 
-  if (videosRegex.test($(location).attr("href"))) {
-    videosPage();
-  }
-
   if (musicRegex.test($(location).attr("href"))) {
     musicPage();
   }

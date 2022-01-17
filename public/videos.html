@@ -26,7 +26,7 @@
     <div class="flex justify-center">
       <div class="container flex-grow max-w-screen-lg">
         <div data-include="/common/navbar.html" class="navbar-container"></div>
-        <div class="grid grid-cols-2 gap-4 p-4 text-center bg-black">
+        <div class="container-inner grid grid-cols-2 gap-4">
           <div class="music-videos grid col-span-2">
             <svg viewBox="0 0 16 9"></svg>
             <iframe
@@ -39,6 +39,25 @@
               allowfullscreen
               id="main_video"
             ></iframe>
+          </div>
+          <p>MAKE A BEAT WITH ME:</p>
+          <div class="music-videos grid col-span-2 relative">
+            <svg viewBox="0 0 16 4.5"></svg>
+            <button class="video-nav-btn" id="btn-left">
+              <img src="img/logos/arrow-left.svg" alt="" />
+            </button>
+            <button class="video-nav-btn" id="btn-right" style="right: 0">
+              <img src="img/logos/arrow-right.svg" alt="" />
+            </button>
+            <div
+              class="grid grid-flow-col gap-4 auto-cols-2 overflow-scroll scroll-hidden"
+              id="beats-videos"
+            >
+              <div class="bg-red-900 h-full relative">
+                <div class="absolute h-full w-full vid_overlay"></div>
+                <div id="player"></div>
+              </div>
+            </div>
           </div>
           <div class="music-videos grid col-span-2 relative">
             <svg viewBox="0 0 16 4.5"></svg>
@@ -122,4 +141,5 @@
     </div>
   </body>
   <script src="js/main.js"></script>
+  <script src="js/videosPage.js"></script>
 </html>

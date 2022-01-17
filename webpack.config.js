@@ -2,10 +2,10 @@ const path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
-  entry: ["./src/index.js"],
+  entry: { main: "./src/index.js", videosPage: "./src/js/videos-page.js" },
   output: {
     path: path.join(__dirname, "public/js"),
-    filename: "main.js",
+    filename: "[name].js",
   },
   plugins: [
     new webpack.ProvidePlugin({
