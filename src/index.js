@@ -1,10 +1,10 @@
 import Loadchanges from "./js/load-changes";
 import replaceLogo from "./js/replace-logo";
 import submitForm from "./js/submit-form";
-import videosPage from "./js/videos-page";
+import { videosPage, overlay_click } from "./js/videos-page";
 import musicPage from "./js/music-page";
 import main from "./js/main";
-import onYouTubeIframeAPIReady from "./js/utils/youtube-api";
+import { onYouTubeIframeAPIReady } from "./js/utils/youtube-api";
 
 const homeRegex = new RegExp(".com/$", "i");
 const contactRegex = new RegExp("contact", "i");
@@ -12,14 +12,6 @@ const videosRegex = new RegExp("videos", "i");
 const musicRegex = new RegExp("music", "i");
 
 Loadchanges();
-
-function overlay_click(id) {
-  let new_video = $(id).attr("src");
-  let old_video = $("#main_video");
-  if (new_video !== old_video.attr("src")) {
-    old_video.attr("src", new_video);
-  }
-}
 
 $(document).ajaxStop(function () {
   main();
