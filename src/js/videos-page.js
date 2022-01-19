@@ -15,10 +15,8 @@ export function videosPage() {
 }
 
 export function overlay_click(id) {
-  let new_video = $(id).attr("videoId");
   let old_video = $("#main_video");
-  if (new_video !== old_video.attr("src")) {
-    console.log(new_video);
-    player.cueVideoById(new_video);
+  if (id !== old_video.attr("src")) {
+    player.cueVideoById(id);
   }
 }

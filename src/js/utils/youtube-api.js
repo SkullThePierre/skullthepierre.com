@@ -1,4 +1,4 @@
-import { video_page_slider_list } from "../link_list";
+import { video_page_slider_list, main_page_video } from "../link_list";
 
 function videos() {}
 
@@ -23,10 +23,21 @@ const pages = {
       },
     });
   },
+  main: () => {
+    console.log(main_page_video);
+    player = new YT.Player("main-video", {
+      videoId: main_page_video,
+      width: "100%",
+      height: "100%",
+      id: "main-video",
+      class: "embedded-video opacity-0",
+    });
+  },
 };
 
 var page;
 export function importYoutubeApi(p) {
+  console.log(p);
   page = p;
   var tag = document.createElement("script");
   tag.src = "https://www.youtube.com/iframe_api";
@@ -42,7 +53,7 @@ export function onYouTubeIframeAPIReady() {
 function listVideos() {
   $.each(video_page_slider_list, function (key, video_id) {
     let elem = `<div class="bg-red-900 h-full relative">
-                  <div class="absolute h-full w-full vid_overlay" onclick="overlay_click(vid_${key})"></div>
+                  <div class="absolute h-full w-full vid_overlay" onclick="overlay_click('${video_id}')"></div>
                   <div id="vid_${key}"></div>
                 </div>`;
 
@@ -52,11 +63,9 @@ function listVideos() {
       height: "100%",
       width: "100%",
       id: `vid_${key}`,
-      class: video_id,
       events: {
         onReady: () => {
           p.cueVideoById(video_id);
-          $(`#vid_${key}`).attr("videoId", video_id);
         },
       },
     });
