@@ -5,3 +5,5 @@ export const video_page_slider_list = [
   "9S0fHQICpkY",
   "KfFCn3bZ_Xs",
 ];
+
+export const main_page_video = "rBNfZdD_vG8";

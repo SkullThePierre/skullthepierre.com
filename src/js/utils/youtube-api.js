@@ -1,7 +1,6 @@
-import { video_page_slider_list, main_page_video } from "../link_list";
+import { video_page_slider_list } from "../link_list";
 
-function videos() {}
-
+export var player;
 const pages = {
   videos: () => {
     player = new YT.Player("main_video", {
@@ -24,13 +23,18 @@ const pages = {
     });
   },
   main: () => {
-    console.log(main_page_video);
     player = new YT.Player("main-video", {
-      videoId: main_page_video,
       width: "100%",
       height: "100%",
+      playerVars: {
+        controls: 1,
+      },
       id: "main-video",
-      class: "embedded-video opacity-0",
+      events: {
+        onReady: () => {
+          $("#main-video").attr("class", "embedded-video opacity-0");
+        },
+      },
     });
   },
 };
@@ -45,7 +49,6 @@ export function importYoutubeApi(p) {
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 }
 
-export var player;
 export function onYouTubeIframeAPIReady() {
   pages[page]();
 }

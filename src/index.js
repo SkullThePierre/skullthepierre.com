@@ -20,6 +20,7 @@ $(document).ajaxStop(function () {
   main();
 
   if (homeRegex.test($(location).attr("href"))) {
+    importYoutubeApi("main");
     replaceLogo();
   }
 
