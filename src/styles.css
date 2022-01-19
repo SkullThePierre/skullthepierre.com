@@ -58,6 +58,10 @@
     padding-bottom: 222.4px;
   }
 
+  .container-inner {
+    @apply bg-black pt-4 text-white font-sans tracking-wider;
+  }
+
   .footer-container {
     height: 222.4px;
     background-color: black;
