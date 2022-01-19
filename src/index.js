@@ -13,6 +13,14 @@ const musicRegex = new RegExp("music", "i");
 
 Loadchanges();
 
+function overlay_click(id) {
+  let new_video = $(id).attr("src");
+  let old_video = $("#main_video");
+  if (new_video !== old_video.attr("src")) {
+    old_video.attr("src", new_video);
+  }
+}
+
 $(document).ajaxStop(function () {
   main();
 
@@ -43,3 +51,4 @@ $(document).ajaxStop(function () {
 });
 
 window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
+window.overlay_click = overlay_click;
