@@ -1,7 +1,13 @@
 {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.https": {
+    "enable": true, //set it true to enable the feature.
+    "cert": "C:/Users/parth/Documents/Workspace/Piere.Fonseca/Website/skullthepierre.com/.vscode/server.csr", //full path of the certificate
+    "key": "C:/Users/parth/Documents/Workspace/Piere.Fonseca/Website/skullthepierre.com/.vscode/server.key", //full path of the private key
+    "passphrase": "12345"
   }
+}
