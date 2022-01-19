@@ -59,7 +59,7 @@
   }
 
   .container-inner {
-    @apply pt-14 md:pt-4 text-white font-sans tracking-wider;
+    @apply bg-black pt-4 text-white font-sans tracking-wider;
   }
 
   .footer-container {

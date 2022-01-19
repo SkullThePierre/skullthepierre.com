@@ -1,13 +1,6 @@
-export default function videosPage() {
-  $(".vid_overlay").on("click", function () {
-    let new_video = $(this).next().attr("src");
-    let old_video = $("#main_video");
+import { player } from "./utils/youtube-api";
 
-    if (new_video !== old_video.attr("src")) {
-      old_video.attr("src", new_video);
-    }
-  });
-
+export function videosPage() {
   $("#btn-left").on("click", function () {
     var leftPos = $("#video_slider").scrollLeft();
     console.log("srcolling left", leftPos);
@@ -19,4 +12,11 @@ export default function videosPage() {
     console.log("srcolling right", leftPos);
     $("#video_slider").animate({ scrollLeft: leftPos + 400 }, 400);
   });
+}
+
+export function overlay_click(id) {
+  let old_video = $("#main_video");
+  if (id !== old_video.attr("src")) {
+    player.cueVideoById(id);
+  }
 }
