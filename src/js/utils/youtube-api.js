@@ -1,25 +1,42 @@
 import { video_page_slider_list } from "../link_list";
 
+function videos() {}
+
+const pages = {
+  videos: () => {
+    player = new YT.Player("main_video", {
+      height: "100%",
+      width: "100%",
+      id: "main_video",
+      videoId: "rBNfZdD_vG8",
+      events: {
+        onReady: listVideos,
+      },
+    });
+
+    new YT.Player("beats_0", {
+      height: "100%",
+      width: "100%",
+      playerVars: {
+        listtype: "playlist",
+        list: "PL0fxpGNlsFQgXhcNwh7C4vkA-KyCUdUms",
+      },
+    });
+  },
+};
+
+var page;
+export function importYoutubeApi(p) {
+  page = p;
+  var tag = document.createElement("script");
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName("script")[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+}
+
 export var player;
 export function onYouTubeIframeAPIReady() {
-  player = new YT.Player("main_video", {
-    height: "100%",
-    width: "100%",
-    id: "main_video",
-    videoId: "rBNfZdD_vG8",
-    events: {
-      onReady: listVideos,
-    },
-  });
-
-  new YT.Player("beats_0", {
-    height: "100%",
-    width: "100%",
-    playerVars: {
-      listtype: "playlist",
-      list: "PL0fxpGNlsFQgXhcNwh7C4vkA-KyCUdUms",
-    },
-  });
+  pages[page]();
 }
 
 function listVideos() {

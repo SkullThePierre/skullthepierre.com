@@ -4,7 +4,10 @@ import submitForm from "./js/submit-form";
 import { videosPage, overlay_click } from "./js/videos-page";
 import musicPage from "./js/music-page";
 import main from "./js/main";
-import { onYouTubeIframeAPIReady } from "./js/utils/youtube-api";
+import {
+  onYouTubeIframeAPIReady,
+  importYoutubeApi,
+} from "./js/utils/youtube-api";
 
 const homeRegex = new RegExp(".com/$", "i");
 const contactRegex = new RegExp("contact", "i");
@@ -25,11 +28,7 @@ $(document).ajaxStop(function () {
   }
 
   if (videosRegex.test($(location).attr("href"))) {
-    var tag = document.createElement("script");
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName("script")[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
+    importYoutubeApi("videos");
     videosPage();
   }
 
