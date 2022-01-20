@@ -23,6 +23,7 @@ export default function replaceLogo() {
 
   // Replace the logo.
   function replace_logo() {
+    // Load video by ID.
     player.cueVideoById(main_page_video);
     $(window).off("scroll"); // turn-off detection.
     skpLogo

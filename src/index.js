@@ -9,6 +9,8 @@ import {
   importYoutubeApi,
 } from "./js/utils/youtube-api";
 
+// Regex to check current page.
+// Seperates code for different pages.
 const homeRegex = new RegExp(".com/$", "i");
 const contactRegex = new RegExp("contact", "i");
 const videosRegex = new RegExp("videos", "i");
@@ -17,6 +19,7 @@ const musicRegex = new RegExp("music", "i");
 Loadchanges();
 
 $(document).ajaxStop(function () {
+  // Once all `[data-include]` tags are replaces, call the appropriate functions.
   main();
 
   if (homeRegex.test($(location).attr("href"))) {
@@ -42,5 +45,6 @@ $(document).ajaxStop(function () {
   }, 1500);
 });
 
+// Prevent webpack from disregarding "unused" functions.
 window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
 window.overlay_click = overlay_click;
