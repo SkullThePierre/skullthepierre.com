@@ -6,14 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <style>
+      /* To keep videos responsive. */
+      .music-videos > * {
+        grid-area: 1 / 1 / 2 / 2;
+      }
 
+      .scroll-hidden {
+        scrollbar-width: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
     <title>SKP - Videos</title>
   </head>
   <body class="antialiased bg-black">
     <div class="flex justify-center">
       <div class="container flex-grow max-w-screen-lg">
         <div data-include="/common/navbar.html" class="navbar-container"></div>
-        <div class="" data-include="/common/under_construction.html"></div>
+        <div class="container-inner grid grid-cols-2 gap-4">
+          <div class="music-videos grid col-span-2">
+            <svg viewBox="0 0 16 9"></svg>
+            <div id="main_video"></div>
+          </div>
+          <div class="music-videos grid col-span-2 relative">
+            <svg viewBox="0 0 16 4.5"></svg>
+            <button class="video-nav-btn" id="btn-left">
+              <img src="img/logos/arrow-left.svg" alt="" />
+            </button>
+            <button class="video-nav-btn" id="btn-right" style="right: 0">
+              <img src="img/logos/arrow-right.svg" alt="" />
+            </button>
+            <div
+              class="grid grid-flow-col gap-4 auto-cols-2 overflow-scroll scroll-hidden"
+              id="video_slider"
+            ></div>
+          </div>
+          <p class="pt-12">MAKE A BEAT WITH ME:</p>
+          <div class="music-videos col-span-2 grid relative">
+            <svg viewBox="0 0 16 9"></svg>
+            <div class="bg-red-900 h-full">
+              <div id="beats_0"></div>
+            </div>
+          </div>
+        </div>
         <div data-include="/common/footer.html" class="footer-container"></div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import createCookie from "./create-cookie";
 
 export default function getCookieBanner() {
+  // Creates privacy policy banner.
   $.get("/common/cookie_policy_banner.html", function (page) {
     $(".container").append(page);
   }).then(function () {

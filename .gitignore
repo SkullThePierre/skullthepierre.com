@@ -2,3 +2,4 @@ node_modules/*
 public/css/styles.css
 public/js/main.js
 public/js/main.js.LICENSE.txt
+.DS_Store

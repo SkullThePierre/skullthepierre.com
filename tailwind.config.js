@@ -2,12 +2,20 @@ module.exports = {
   NODE_ENV: process.env.NODE_ENV || "development",
   purge: {
     content: ["./public/**/*.html", "./src/**/*.js"],
-    options:{
-      safelist: ["myShop", "sprd-footer", "sprd-info-footer__contact-col", "sprd-service-footer", 
-                "sprd-info-footer__open-shop", "sprd-breadcrumb", "sprd-info-footer", "sprd-product-list", 
-                "sprd-tracking-menu__dropup"]
-      }
+    options: {
+      safelist: [
+        "myShop",
+        "sprd-footer",
+        "sprd-info-footer__contact-col",
+        "sprd-service-footer",
+        "sprd-info-footer__open-shop",
+        "sprd-breadcrumb",
+        "sprd-info-footer",
+        "sprd-product-list",
+        "sprd-tracking-menu__dropup",
+      ],
     },
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -36,6 +44,7 @@ module.exports = {
       fontFamily: {
         compHandMedium: ["CompHandMedium"],
         indieFlower: ['"Indie Flower"', "cursive"],
+        sans: ["Nunito", '"Open Sans"', "sans-serif"],
       },
 
       gridTemplateColumns: {

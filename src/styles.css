@@ -1,5 +1,6 @@
 @import url("https://fontlibrary.org/face/comphand");
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -53,8 +54,12 @@
   }
 
   .container {
-    @apply pt-0 sm:pt-75 relative;
+    @apply bg-black pt-0 sm:pt-75 relative;
     padding-bottom: 222.4px;
+  }
+
+  .container-inner {
+    @apply bg-black pt-4 text-white font-sans tracking-wider;
   }
 
   .footer-container {
@@ -63,6 +68,23 @@
     position: absolute;
     width: 100%;
     bottom: 0;
+  }
+
+  .sm-list {
+    @apply flex justify-center space-x-3;
+  }
+
+  .music-chnls {
+    @apply md:col-span-2 pt-4 pb-8 flex justify-center space-x-3;
+  }
+
+  .music-chnls > a {
+    filter: brightness(0.75);
+    @apply w-10 grid items-center;
+  }
+
+  .music-chnls > a:hover {
+    filter: brightness(1);
   }
 
   .sm-link {
@@ -98,12 +120,36 @@
   .cookie-ok {
     background-color: green;
   }
+
+  .video-nav-btn {
+    @apply bg-white p-3 self-center absolute z-9999;
+  }
+
+  .cover-art {
+    @apply grid justify-items-center;
+  }
+
+  .cover-art > img {
+    @apply max-h-64;
+  }
+
+  .buy-btn {
+    @apply border-2 p-2.5;
+  }
+
   #myShop .sprd-tracking-menu__dropup {
     @apply p-14;
   }
 
   #myShop .sprd-product-list {
     min-height: 25vh;
+  }
+
+  #myShop .sprd-header {
+    min-height: 56px;
+  }
+  #myShop .sprd-breadcrumb {
+    padding-top: 1rem;
   }
 
   #sprd-footer .sprd-info-footer {

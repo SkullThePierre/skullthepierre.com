@@ -12,10 +12,176 @@
     <div class="flex justify-center">
       <div class="container flex-grow max-w-screen-lg">
         <div data-include="/common/navbar.html" class="navbar-container"></div>
-        <div class="" data-include="/common/under_construction.html"></div>
+        <div class="container-inner">
+          <div
+            class="grid gap-4 grid-cols-1 md:grid-cols-2 justify-items-center"
+            id="music_cards"
+          >
+            <div class="music-chnls">
+              <a
+                href="https://open.spotify.com/artist/2ZOEEJHSVPshx3G4Hd2kbM"
+                target="_blank"
+              >
+                <img src="/img/logos/spotify-icon-white.png" alt="" />
+              </a>
+
+              <!-- YouTube -->
+              <a
+                href="https://www.youtube.com/channel/UCylbGSJRrmYQGNeesb1E6UA"
+                target="_blank"
+              >
+                <img src="/img/logos/youtube-icon-white.png" alt="" />
+              </a>
+              <!-- Apple Music -->
+              <a
+                href="https://music.apple.com/ie/artist/skull-the-pierre/1498896300"
+                target="_blank"
+              >
+                <img src="/img/logos/apple-music-icon-white.svg" alt="" />
+              </a>
+
+              <!-- Soundcloud -->
+              <a href="https://soundcloud.com/fontastic" target="_blank">
+                <img src="img/logos/soundclound-icon-white.png" alt="" />
+              </a>
+
+              <!-- Bandcamp -->
+              <a href="https://skullthepierre.bandcamp.com/" target="_blank">
+                <img src="/img/logos/bandcamp-icon-white.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
         <div data-include="/common/footer.html" class="footer-container"></div>
       </div>
     </div>
   </body>
   <script src="js/main.js"></script>
+  <script>
+    // Links and details for albums to display on /music page.
+    // The format for an album is as follows:
+
+    // key: {
+    //    name: "<album name>",
+    //    cover: "<relative path to album cover image>",
+    //    streaming: {
+    //         spotify: "<spotify url>",
+    //         youtube: "<youtube url>",
+    //         appleMusic: "<apple music url>",
+    //         soundcloud: "<soundcloud url>",
+    //         bandcamp: "<bandcamp url>",
+    //       },
+    //      buybtn: "<link to buy the album>"
+    //    }
+
+    // If a link doesn't exist, the fild can be omitted or left blank.
+
+    const music_cards = {
+      frupp: {
+        name: "FRUPP",
+        cover: "img/cover-art/frupp.jpg",
+        streaming: {
+          spotify: "https://open.spotify.com/album/1zG2P4xfuRUwWby1AaVn6K",
+          youtube: "https://www.youtube.com/embed/NtpWPGfUTnc",
+          appleMusic: "",
+          soundcloud: "",
+          bandcamp: "",
+        },
+        buybtn: "",
+      },
+      ladida: {
+        name: "LADIDA DEATH VALLEY",
+        cover: "img/cover-art/ladida-death-valley.jpg",
+        streaming: {
+          spotify: "https://open.spotify.com/album/34JcnJb6mImxNYwJjb7CmG",
+          youtube: "",
+          appleMusic: "",
+          soundcloud: "",
+          bandcamp: "",
+        },
+        buybtn: "",
+      },
+      wolf: {
+        name: "ain't you scared of the wolf",
+        cover: "img/cover-art/wolf.jpg",
+        streaming: {
+          spotify: "",
+          youtube: "",
+          appleMusic: "",
+          soundcloud: "",
+          bandcamp: "",
+        },
+        buybtn: "",
+      },
+      cinco: {
+        name: "cinco",
+        cover: "img/cover-art/cinco.jpg",
+        streaming: {
+          spotify: "",
+          youtube: "",
+          appleMusic: "",
+          soundcloud: "",
+          bandcamp: "",
+        },
+        buybtn: "",
+      },
+      cos: {
+        name: "city of sounds",
+        cover: "img/cover-art/cos_.jpg",
+        streaming: {
+          spotify: "",
+          youtube: "",
+          appleMusic: "",
+          soundcloud: "",
+          bandcamp: "",
+        },
+        buybtn: "",
+      },
+      yourMind: {
+        name: "on your mind",
+        cover: "img/cover-art/on-my-mind.jpg",
+        streaming: {
+          spotify: "",
+          youtube: "",
+          appleMusic: "",
+          soundcloud: "",
+          bandcamp: "",
+        },
+        buybtn: "",
+      },
+      sleepless: {
+        name: "sleepless",
+        cover: "img/cover-art/sleepless.jpg",
+        streaming: {
+          spotify: "",
+          youtube: "",
+          appleMusic: "",
+          soundcloud: "",
+          bandcamp: "",
+        },
+        buybtn: "",
+      },
+      yellowHorse: {
+        name: "yellow horse",
+        cover: "img/cover-art/yellow-horse.jpg",
+        streaming: {
+          spotify: "",
+          youtube: "",
+          appleMusic: "",
+          soundcloud: "",
+          bandcamp: "",
+        },
+        buybtn: "",
+      },
+    };
+
+    // Relative paths to social media icons. DO NOT CHANGE.
+    const sm_logos = {
+      spotify: "/img/logos/spotify-icon-white.png",
+      youtube: "/img/logos/youtube-icon-white.png",
+      appleMusic: "/img/logos/apple-music-icon-white.svg",
+      soundcloud: "img/logos/soundclound-icon-white.png",
+      bandcamp: "/img/logos/bandcamp-icon-white.png",
+    };
+  </script>
 </html>

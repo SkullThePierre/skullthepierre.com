@@ -1,12 +1,12 @@
+import { player } from "./utils/youtube-api";
+import { main_page_video } from "./link_list";
+
 //Load youtube video in background after the page is loaded.
 export default function replaceLogo() {
-  let v = $("#main-video");
-  v.attr("src", "https://www.youtube-nocookie.com/embed/mOJPFDT5i_E");
-
   //Detect when skp-centre-logo is in the middle of the screen.
   let skpLogo = $("#skp-logo");
   let timeout = null;
-  $(window).scroll(function () {
+  $(window).on("scroll", function () {
     if (!timeout) {
       timeout = setTimeout(function () {
         clearTimeout(timeout);
@@ -23,6 +23,8 @@ export default function replaceLogo() {
 
   // Replace the logo.
   function replace_logo() {
+    // Load video by ID.
+    player.cueVideoById(main_page_video);
     $(window).off("scroll"); // turn-off detection.
     skpLogo
       .addClass(
