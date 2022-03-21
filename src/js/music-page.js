@@ -1,7 +1,11 @@
 function get_streaming_links(links) {
-  let streaming_links = [];
+  // Function to create streaming media icon with appropriate links.
+  let streaming_links = []; // Array to store tags.
+
   $.each(links, function (key, link) {
+    // Loop over each link.
     if (link !== "") {
+      // If link exists, create the tag.
       let c_link = `
         <div class="sm-list">
             <a href="${link}" class="sm-link" target="_blank">
@@ -9,14 +13,19 @@ function get_streaming_links(links) {
             </a>
         </div>`;
 
-      streaming_links.push(c_link);
+      streaming_links.push(c_link); // Add to array.
     }
   });
+
+  // Join array and return as string.
   return streaming_links.join("");
 }
 
 export default function musicPage() {
+  // Function to create album cards on /music.
+  // music_cards defined in music.html
   $.each(music_cards, function (key, card) {
+    // Loop over each element.
     let music_card = `
         <div class='cover-art'>
             <img src='${card.cover}' alt='' />
@@ -31,8 +40,8 @@ export default function musicPage() {
                     : ""
                 }
             </div>
-        </div>
-        `;
+        </div>`;
+    // Add card to page.
     $("#music_cards").append(music_card);
   });
 }

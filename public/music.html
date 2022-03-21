@@ -58,6 +58,24 @@
   </body>
   <script src="js/main.js"></script>
   <script>
+    // Links and details for albums to display on /music page.
+    // The format for an album is as follows:
+
+    // key: {
+    //    name: "<album name>",
+    //    cover: "<relative path to album cover image>",
+    //    streaming: {
+    //         spotify: "<spotify url>",
+    //         youtube: "<youtube url>",
+    //         appleMusic: "<apple music url>",
+    //         soundcloud: "<soundcloud url>",
+    //         bandcamp: "<bandcamp url>",
+    //       },
+    //      buybtn: "<link to buy the album>"
+    //    }
+
+    // If a link doesn't exist, the fild can be omitted or left blank.
+
     const music_cards = {
       frupp: {
         name: "FRUPP",
@@ -157,6 +175,7 @@
       },
     };
 
+    // Relative paths to social media icons. DO NOT CHANGE.
     const sm_logos = {
       spotify: "/img/logos/spotify-icon-white.png",
       youtube: "/img/logos/youtube-icon-white.png",

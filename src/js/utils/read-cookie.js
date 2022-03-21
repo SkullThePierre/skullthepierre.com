@@ -1,4 +1,5 @@
 export default function readCookie(name) {
+  // Reads a cookie with given name.
   let nameEQ = name + "=";
   let ca = document.cookie.split(";");
   for (let i = 0; i < ca.length; i++) {

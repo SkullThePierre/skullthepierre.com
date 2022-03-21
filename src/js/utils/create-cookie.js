@@ -1,4 +1,5 @@
 export default function createCookie(name, value, days) {
+  // Creates a cookie with given name, value and sets expiration in days.
   let expires = "";
   if (days) {
     let date = new Date();
